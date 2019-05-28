@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/index1"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+
+    </ListView>
+
+    <RelativeLayout
+        android:theme="@style/Animation.AppCompat.Dialog"
+
+        android:background="@color/list_control"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:id="@+id/control_panel"
+
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/control_thumb"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+
+            android:layout_centerVertical="true"
+
+
+            android:scaleType="fitXY" />
+        <LinearLayout
+            android:id="@+id/control_two"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="350px"
+            android:layout_toRightOf="@id/control_thumb"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/control_name"
+                android:clickable="true"
+                android:layout_width="700px"
+
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/control_singer"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_width="700px"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/control_play"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/control_play_list"
+            android:layout_toStartOf="@+id/control_play_list"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/control_play_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="onClick" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

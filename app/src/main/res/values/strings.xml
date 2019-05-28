@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IMusic</string>
+    <string name="local_title_name">"本地音乐"</string>
+</resources>
